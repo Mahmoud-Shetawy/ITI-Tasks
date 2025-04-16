@@ -1,0 +1,8 @@
+#include <stdlib.h>
+#include <windows.h>
+
+void textattr(int i)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), i);
+
+}

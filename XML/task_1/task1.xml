@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Hp/Desktop/day3/xml_tasks_DAY2/task1/task_1.xsd">
+	<grandfather>Grand
+    <father job="dr">dad
+         <mother>sama</mother>
+			<daughter age="22" job="dr">asmaa</daughter>
+			<son age="23" sport="football">aymen</son>
+		</father>
+		<uncle>adm</uncle>
+		<uncle>adm</uncle>
+		<aunt son="adm">mona</aunt>
+	</grandfather>
+</family>

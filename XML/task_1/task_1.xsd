@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (x64) (http://www.altova.com) by USER (ORG) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="sportname">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="football"/>
+			<xs:enumeration value="tennis"/>
+			<xs:enumeration value="basketball"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="jobtit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="dr"/>
+			<xs:enumeration value="eng"/>
+			<xs:enumeration value="acou"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="family">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="grandfather" >
+					<xs:complexType mixed="true">
+						
+						<xs:sequence>
+							<xs:element name="father">
+								<xs:complexType mixed="true">
+									
+									
+									<xs:sequence>
+										<xs:element name="mother" type="xs:string"/>
+										<xs:element name="daughter">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="age" type="xs:int"/>
+														<xs:attribute name="job" type="xs:string"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="son">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="age" type="xs:int"/>
+														<xs:attribute name="sport" type="sportname"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									
+									
+											<xs:attribute name="job" type="jobtit"/>
+									
+								</xs:complexType>
+								  
+							</xs:element>
+							<xs:element name="uncle" maxOccurs="2">
+							<xs:simpleType>
+								<xs:restriction base="xs:string"></xs:restriction>
+							</xs:simpleType>
+							</xs:element>
+							<xs:element name="aunt">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="son" type="xs:string"/>
+										</xs:extension>
+									</xs:simpleContent>
+									
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						
+					</xs:complexType>
+					  
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

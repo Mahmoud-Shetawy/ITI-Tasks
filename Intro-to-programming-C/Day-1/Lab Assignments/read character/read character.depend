@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1728988526 source:d:\iti\lab assignments\day one\read character\main.c
+	<stdio.h>
+	<stdlib.h>
+

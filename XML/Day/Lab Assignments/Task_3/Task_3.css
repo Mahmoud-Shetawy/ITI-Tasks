@@ -1,0 +1,17 @@
+CD{
+	display:block;
+	margin-bottom: 30px;
+	margin-left: 100px;
+}
+CD TITLE{
+	color: red;
+	font-size: 25px;
+}
+CD ARTIST{
+	color: blue;
+	font-size: 25px;
+}
+CD COUNTRY,COMPANY,PRICE,YEAR{
+	display:block;
+	margin-left: 30px;
+}

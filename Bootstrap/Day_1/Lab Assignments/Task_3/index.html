@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <style>
+            .project-name {
+                font-weight: bold;
+            }
+            .project-description:hover {
+                color: #007bff;
+            }
+            footer {
+                background-color: #1d1f27;
+                color: #fff;
+                padding: 40px 0;
+            }
+            footer h5 {
+                color: #f8f9fa;
+            }
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+            footer ul li {
+                margin-bottom: 10px;
+            }
+            .social-icons a {
+                color: #fff;
+                margin: 0 10px;
+                font-size: 20px;
+            }
+            .social-icons a:hover {
+                color: #007bff;
+            }
+            .contact-email {
+                background-color: #ff4c60;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+            .contact-email:hover {
+                background-color: #e63946;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container mt-5 text-center">
+            <h1>My Portfolio</h1>
+            <p>Some text that represents "Me"...</p>
+        </div>
+
+        <!-- Work Section -->
+        <div class="container mt-5">
+            <h2 class="text-center">Some of my Work</h2>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light p-3">
+                            <p class="project-name">Project name</p>
+                            <div class="bg-secondary text-white py-5">
+                                IMAGE
+                            </div>
+                            <p class="project-description">
+                                Project description
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light p-3">
+                            <p class="project-name">Project name</p>
+                            <div class="bg-secondary text-white py-5">
+                                IMAGE
+                            </div>
+                            <p class="project-description">
+                                Project description
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light p-3">
+                            <p class="project-name">Project name</p>
+                            <div class="bg-secondary text-white py-5">
+                                IMAGE
+                            </div>
+                            <p class="project-description">
+                                Project description
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>My Portfolio</h5>
+                        <p>
+                            Pellentesque in ipsum id orci porta dapibus. Vivamus
+                            magna justo, lacinia eget consectetur sed, convallis
+                            at tellus.
+                        </p>
+                        <p>Created by Me</p>
+                        <p>&copy; 2025 My Portfolio</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <p>Get in touch with us via mail or phone.</p>
+                        <a href="mailto:example@gmail.com" class="contact-email"
+                            >example@gmail.com</a
+                        >
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

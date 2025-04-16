@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729429627 source:d:\iti\day 4\lab assignments\array of 3 employees read and write\main.c
+	<stdio.h>
+	<string.h>
+

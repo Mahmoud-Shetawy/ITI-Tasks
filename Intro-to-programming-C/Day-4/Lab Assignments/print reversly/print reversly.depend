@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729423611 source:d:\iti\day 4\lab assignments\print reversly\main.c
+	<stdio.h>
+	<string.h>
+

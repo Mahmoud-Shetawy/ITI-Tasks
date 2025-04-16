@@ -1,0 +1,97 @@
+# C++ Files
+*.o
+*.exe
+*.out
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.a
+build/
+
+# Java Files
+*.class
+*.jar
+*.war
+*.ear
+target/
+out/
+bin/
+
+# IDEs and Editors
+.idea/              # IntelliJ IDEA
+*.iml               # IntelliJ IDEA
+.vscode/            # Visual Studio Code
+*.code-workspace    # VS Code workspace
+*.sublime-*         # Sublime Text
+*.project           # Eclipse
+*.classpath         # Eclipse
+.settings/          # Eclipse
+*.launch            # Eclipse launch configurations
+
+# Build Tools
+.gradle/            # Gradle
+build.gradle        # Gradle build files (unless you need them)
+gradlew
+gradlew.bat
+mvnw
+mvnw.cmd
+.mvn/               # Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Temporary Files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store           # macOS
+Thumbs.db           # Windows
+
+# Output and Generated Files
+output/
+*.output
+*.txt               # Unless you want to include specific output files
+*.pdf
+*.doc
+*.docx
+
+# Virtual Environments (if you use Python for other tasks)
+venv/
+env/
+.env/
+.virtualenv/
+*.pyc
+__pycache__/
+
+# Miscellaneous
+*.zip
+*.tar.gz
+*.rar
+node_modules/       # In case you use JavaScript/Node.js
+dist/
+coverage/
+*.cache
+*.pid
+*.seed
+Intro-to-programming-C/Day-4/resource/20211103_090335.mp4
+MongoDB/day_2/Lectures/Technical Lectures Open Source Intake 45-20250211_100823-Meeting Recording.mp4
+# 🔧 CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# 🚫 System / OS
+.DS_Store
+Thumbs.db
+
+# 🛠️ Others
+*.iml

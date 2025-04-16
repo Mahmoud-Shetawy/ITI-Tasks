@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729173187 source:d:\iti\day 3\lab assignments\identify ascii\main.c
+	<stdio.h>
+	<stdlib.h>
+

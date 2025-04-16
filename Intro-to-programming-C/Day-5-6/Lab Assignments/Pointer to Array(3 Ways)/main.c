@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+
+    /////1 way
+    int arr[5];
+    int *ptr = arr;
+
+   for (int i = 0; i < 5; i++) {
+       printf("Way #1 Enter value for index %i: ", i);
+       scanf("%i", ptr + i);
+   }
+
+   for (int i = 0; i < 5; i++) {
+       printf("Value at index %i: %i\n", i, *(ptr + i));
+   }
+        /////2 way
+
+
+   for (int i = 0; i < 5; i++) {
+       printf("Way #2 Enter value for index %i: ", i);
+       scanf("%i", &ptr[i]);
+   }
+
+       for (int i = 0; i < 5; i++) {
+       printf("Value at index %i: %i\n", i, ptr[i]);
+   }
+
+
+
+            /////3 way
+        for (int i = 0; i < 5; i++,ptr++) {
+        printf("Way #3 Enter value for index %d: ", i);
+        scanf("%i", ptr);
+
+    }
+        ptr=arr;
+        for (int i = 0; i < 5; i++,ptr++) {
+        printf("Value at index %i: %i\n", i, *ptr);
+    }
+
+
+}
+

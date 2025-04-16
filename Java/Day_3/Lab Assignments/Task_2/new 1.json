@@ -1,0 +1,119 @@
+db.student.insertOne({
+    FirstName: "Mrihan",
+    LastName: "Mohamed",
+    Age: 26,
+    Faculty: { Name: "FCI", Address: "Minia" },
+    Grades: [
+        { CourseName: "C#", Grade: 60, Pass: true },
+        { CourseName: "JS", Grade: 100, Pass: true }
+    ],
+    IsFired: false
+})
+
+
+
+
+db.student.insertOne({
+    FirstName: "Ahmed",
+    LastName: "Ahmed",
+    Age: 23,
+    Faculty: { Name: "FCI", Address: "Shebeen" },
+    Grades: [
+        { CourseName: "C#", Grade: 99, Pass: true },
+        { CourseName: "JS", Grade: 99, Pass: true }
+    ],
+    IsFired: false
+})
+
+
+
+
+
+
+
+db.student.insertMany([
+    {
+        FirstName: "Omar",
+        LastName: "Shetawy",
+        Age: 26,
+        Faculty: { Name: "Business", Address: "Shebeen" },
+        Grades: [
+            { CourseName: "Marketing", Grade: 95, Pass: true }
+        ],
+        IsFired: true
+    },
+    {
+        FirstName: "Mohamed",
+        LastName: "Shetawy",
+        Age: 24,
+        Faculty: { Name: "Pharmacy", Address: "Shebeen" },
+        Grades: [
+            { CourseName: "Pharmacology", Grade: 99, Pass: true }
+        ],
+        IsFired: false
+    }
+])
+
+
+
+
+######################################################################
+
+
+db.student.find()
+
+
+######################################################################
+
+
+db.student.find({ FirstName: "Mrihan" })
+
+
+######################################################################
+
+
+db.student.find({
+    $or: [{ FirstName: "Ahmed" }, { LastName: "Ahmed" }]
+})
+
+
+
+######################################################################
+ 
+ 
+ 
+db.student.find({ FirstName: { $ne: "Ahmed" } })
+
+
+
+######################################################################
+
+
+db.student.find({ Age: { $lt: 26 } })
+
+
+
+######################################################################
+
+
+db.student.find({ IsFired: true })
+
+
+
+######################################################################
+
+
+db.student.find({
+    Age: { $gte: 24 },
+    Faculty: { $ne: null }
+})
+
+
+
+######################################################################
+
+
+db.student.find(
+    { FirstName: "Mrihan" },
+    { FirstName: 1, LastName: 1, IsFired: 1, _id: 0 }
+)
